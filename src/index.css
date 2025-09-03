@@ -1,0 +1,112 @@
+General Reset * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Page background */
+body {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #333;
+  padding: 20px;
+  --angle: 45deg;
+  background: linear-gradient(var(--angle), #ff4500, #daa520, #ffd700);
+}
+
+/* Main Heading */
+.mainHead {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.mainHead h1 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  --angle: 45deg;
+  background: linear-gradient(
+    var(--angle),
+    #e94560,
+    #ef9a48,
+    #f7d74a,
+    #a3e496,
+    #38a3a5
+  );
+}
+
+/* === Grid container for all cards === */
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual card */
+.mainParent {
+  padding: 20px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mainParent:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Card header (Bappa component) */
+.first-container {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mainheading h2 {
+  font-size: 1.4rem;
+  color: hwb(28 2% 11%);
+  --angle: 45deg;
+  background: linear-gradient(var(--angle), #e0ffda, #a0e6b4, #50b882);
+}
+
+.mainheading h3 {
+  font-size: 1.5rem;
+  color: rgb(55, 10, 112);
+  margin-top: 5px;
+  font-weight: normal;
+  --angle: 45deg;
+  background: linear-gradient(var(--angle), #8b458b, #ff69b4, #ffb6c1, #ffffff);
+}
+
+.mainheading h4 {
+  margin-top: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ff0342;
+  --angle: 45deg; 
+background: linear-gradient(var(--angle), #293352, #5D5D6F, #A27B89, #D3A286, #F0D8C3)
+}
+
+/* Information list */
+.informationList {
+  margin-top: 12px;
+  padding-left: 20px;
+  list-style: disc;
+  --angle: 45deg;
+  background: linear-gradient(var(--angle), #00a36c, #5fbc8b, #a2d5ab, #daf2e4);
+}
+
+.informationList li:hover {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  transition: color 0.2s ease;
+  color: black;
+}
+
+.informationList li:hover {
+  color: #bb0606;
+  cursor: pointer;
+}
